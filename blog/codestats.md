@@ -64,6 +64,7 @@ build the component in vue, simple enough
 #### Deploy to NPM
 
 - put vite in build mode so its packaged into the right file types
+  - make sure to export dist files as well as css
 - create a github action to publish on a new release
 - make sure your documentation is readable and helpful
   - uhoh, wanted these images to show up in NPM's readme -> have to put files in public folder

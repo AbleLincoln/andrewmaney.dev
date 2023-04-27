@@ -10,7 +10,7 @@
 
   <section class="mb-16">
     <p>I play guitar and bass for a few touring groups including:</p>
-    <ul class="grid grid-cols-5 text-center text-lg font-semibold">
+    <ul class="grid gap-y-5 text-center text-lg font-semibold md:grid-cols-5">
       <li>Wyman & the Wolves</li>
       <li>McChicken</li>
       <li>Station 26</li>
