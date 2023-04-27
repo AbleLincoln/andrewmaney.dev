@@ -27,6 +27,7 @@ import SkillItem from '../components/SkillItem.vue'
       <p>I am proficient in the following languages, tools, and frameworks:</p>
     </div>
   </section>
+
   <section class="mb-8 flex max-w-lg flex-wrap justify-center">
     <SkillItem skill="HTML" />
     <SkillItem skill="CSS" />
@@ -38,20 +39,30 @@ import SkillItem from '../components/SkillItem.vue'
     <SkillItem skill="WordPress" />
   </section>
 
-  <section class="grid gap-5 sm:grid-cols-5">
+  <section class="mb-8 grid gap-5 sm:grid-cols-5">
     <div class="col-span-3">
       <h2>Musician by night 🌚</h2>
       <p>
         When I'm not coding, I'm making music. I have been singing and playing guitar since I was 5
         years old. I play in a few bands around the Los Angeles area. My main project is the
-        Americana band Wyman & the Wolves. I also make jazz music with the group McChicken.
+        Americana band
+        <a href="https://www.wymanandthewolves.com/" target="_blank">Wyman & the Wolves</a>. I also
+        make jazz music with the group
+        <a href="https://soundcloud.com/mcchicken-official" target="_blank">McChicken</a>.
       </p>
       <p>
-        You can check out some of my solo stuff on SoundCloud or Instagram. I like jazz, blues, R&B,
-        soul, rock, and country music.
+        You can check out some of my solo stuff on
+        <a href="https://soundcloud.com/garlic-loaf" target="_blank">SoundCloud</a> or
+        <a href="https://www.instagram.com/ayymaney/" target="_blank">Instagram</a>. I like jazz,
+        blues, R&B, soul, rock, and country music.
       </p>
       <p>I am available to hire for gigs and recording.</p>
     </div>
+  </section>
+
+  <section class="">
+    <h2>Contact</h2>
+    <p>You can reach me via email: <strong>maneyandrew</strong> at <strong>gmail.com</strong></p>
   </section>
 </template>
 

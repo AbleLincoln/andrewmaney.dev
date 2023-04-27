@@ -1,5 +1,5 @@
 <script setup>
-import { RouterView } from 'vue-router'
+import { RouterView, useRoute } from 'vue-router'
 
 const links = [
   { to: '/', name: 'Home' },
@@ -7,6 +7,9 @@ const links = [
   { to: '/projects', name: 'Projects' },
   { to: '/music', name: 'Music' },
 ]
+
+const route = useRoute()
+console.log(route.name)
 </script>
 
 <template>
@@ -31,7 +34,7 @@ const links = [
   </main>
 
   <footer class="absolute bottom-2">
-    <small class="text-faded">
+    <small v-if="route.name === 'home'" class="text-faded">
       Inspired by
       <a href="https://www.taniarascia.com/" target="_blank" class="no-underline"
         >💾 Tania Rascia</a

@@ -53,3 +53,43 @@ whew this was a beast
 now we just deploy the server and we should be able to use it from our frontend
 
 it could use some more error handling but right now should be good
+
+### Step 4: The Component
+
+build the component in vue, simple enough
+
+- going to use CSS vars to handle theming
+- put in some skeleton loaders for better ux
+
+#### Deploy to NPM
+
+- put vite in build mode so its packaged into the right file types
+- create a github action to publish on a new release
+- make sure your documentation is readable and helpful
+  - uhoh, wanted these images to show up in NPM's readme -> have to put files in public folder
+- nice to have good SEO with: tagline (second line of readme) and keywords
+- viola
+
+### Step 5: Better Performance
+
+Render is slow AF. The app needs to be spun up every time someone hits the API. I think we should move to either Google Cloud or DigitalOcean serverless
+
+Try:
+
+- [google-github-actions/deploy-cloudrun](https://github.com/google-github-actions/deploy-cloudrun)
+
+## Resources
+
+- [GiHub: Authenticating as a GitHub App installation](https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/authenticating-as-a-github-app-installation)
+- [Prettier: GraphQL](https://prettier.io/blog/2017/06/28/1.5.0.html)
+- [octokit/app.js](https://github.com/octokit/app.js)
+- [octokit/octokit.js](https://github.com/octokit/octokit.js)
+- [GitHub: GraphQL API](https://docs.github.com/en/graphql/reference/objects)
+- [GitHub: Creating a GitHub App](https://docs.github.com/en/apps/creating-github-apps/creating-github-apps/creating-a-github-app)
+- [Publishing a Vue 3 component on npm](https://blog.egmond.dev/vue-component-to-npm-package)
+- [Using Vite to Publish a Vue Component to NPM](https://levelup.gitconnected.com/using-vite-to-publish-a-vue-component-to-npm-7043a56cfa00)
+- [GitHub Actions: Publishing Node.js packages](https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages)
+- [Vite: Library mode](https://vitejs.dev/guide/build.html#library-mode)
+- [Packaging Vue Components for npm](https://v2.vuejs.org/v2/cookbook/packaging-sfc-for-npm.html) (specifically for SFC)
+- [How to create a component library with Vue 3 + ViteJS + TypeScript?](https://medium.com/@blaster203/how-to-create-a-component-library-with-vue-3-vitejs-typescript-8eb41f799045)
+  - [`install` function](https://github.com/IsraelDCastro/my-library-vue-ts/blob/main/src/components/main.ts)

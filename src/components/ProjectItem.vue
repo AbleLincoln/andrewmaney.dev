@@ -1,7 +1,8 @@
 <script setup>
 import ImageBlock from './ImageBlock.vue'
-import GitHubCodeStats from './GitHubCodeStats.vue'
-import InlineLogo from '../components/InlineLogo.vue'
+// import GitHubCodeStats from './GitHubCodeStats.vue'
+import Linguistical from 'linguistical'
+import('linguistical/dist/style.css')
 
 defineProps({
   imgsrc: { type: String },
@@ -19,28 +20,29 @@ defineProps({
   <div class="mb-20">
     <div class="mb-3 flex items-center justify-between">
       <h3 class="font-thin">
-        <strong class="">{{ title }}</strong> {{ subtitle }}
+        <strong class="">{{ title }}</strong> <span class="hidden md:inline">{{ subtitle }}</span>
       </h3>
       <a
-        class="mr-2 cursor-pointer rounded border-0 border-faded/50 bg-faded/20 px-3 py-1 text-sm no-underline"
+        class="cursor-pointer rounded border-0 border-faded/50 bg-faded/20 px-3 py-1 text-sm no-underline md:mr-2"
         :href="href"
         target="_blank"
       >
-        Live site
+        <span class="hidden md:inline">Live site</span>
         <font-awesome-icon :icon="['fas', 'arrow-up-right-from-square']" class="text-xs" />
       </a>
     </div>
     <ImageBlock :src="imgsrc" :href="href" :hover-text="hoverText" class="mb-3" />
-    <div class="flex justify-between px-2 text-lg">
-      <!-- <p>
-        built with:
-        <InlineLogo v-for="tech in builtWith" :key="tech" :text="tech" :full-color="false" />
-      </p> -->
-      <GitHubCodeStats user="AbleLincoln" :repo="repo" />
-      <!-- TODO: make dynamic with stats from github -->
-      <a class="cursor-pointer" target="_blank" :href="sourceCode">
-        source code <font-awesome-icon :icon="['fab', 'github']" />
-      </a>
+    <div class="flex -translate-y-0 items-start justify-end text-lg">
+      <!-- <a class="mr-2 cursor-pointer text-base no-underline" target="_blank" :href="sourceCode">
+        <font-awesome-icon :icon="['fab', 'github']" />
+      </a> -->
+
+      <Linguistical
+        user="AbleLincoln"
+        :repo="repo"
+        theme="dark"
+        class="max-w-sm rounded-lg shadow-none"
+      />
     </div>
   </div>
 </template>
