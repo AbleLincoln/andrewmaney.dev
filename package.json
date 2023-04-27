@@ -15,7 +15,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/vue-fontawesome": "^3.0.3",
     "isomorphic-fetch": "^3.0.0",
-    "linguistical": "^0.1.0",
+    "linguistical": "^0.2.5",
     "octokit": "^2.0.14",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
