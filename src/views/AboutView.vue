@@ -59,11 +59,6 @@ import SkillItem from '../components/SkillItem.vue'
       <p>I am available to hire for gigs and recording.</p>
     </div>
   </section>
-
-  <section class="">
-    <h2>Contact</h2>
-    <p>You can reach me via email: <strong>maneyandrew</strong> at <strong>gmail.com</strong></p>
-  </section>
 </template>
 
 <style>
