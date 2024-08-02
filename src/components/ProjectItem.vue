@@ -1,6 +1,5 @@
 <script setup>
 import ImageBlock from './ImageBlock.vue'
-// import GitHubCodeStats from './GitHubCodeStats.vue'
 import Linguistical from 'linguistical'
 import('linguistical/dist/style.css')
 
@@ -34,11 +33,8 @@ defineProps({
     </div>
     <ImageBlock :src="imgsrc" :href="href" :hover-text="hoverText" class="mb-3" />
     <div class="flex -translate-y-0 items-start justify-end text-lg">
-      <!-- <a class="mr-2 cursor-pointer text-base no-underline" target="_blank" :href="sourceCode">
-        <font-awesome-icon :icon="['fab', 'github']" />
-      </a> -->
-
       <Linguistical
+        v-if="repo"
         :user="user"
         :repo="repo"
         theme="dark"

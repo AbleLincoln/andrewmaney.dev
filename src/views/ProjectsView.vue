@@ -11,17 +11,24 @@ import watwsite from '../assets/img/watwsite.png'
 import fasisite from '../assets/img/fasisite.png'
 import push2sftp from '../assets/img/push2sftp.png'
 import untapsite from '../assets/img/untapsite.png'
+import steadysite from '../assets/img/steadysite.png'
 </script>
 
 <template>
+  <ProjectItem
+    title="Steady"
+    subtitle="date coaching"
+    :imgsrc="steadysite"
+    href="https://steadydatecoaching.com/"
+    repo="steady"
+  />
+
   <ProjectItem
     title="Untap"
     subtitle="card game simulator"
     :imgsrc="untapsite"
     href="https://untap.in/"
     source-code="https://github.com/cokeeffekt/untap.in"
-    user="cokeeffekt"
-    repo="untap.in"
   />
 
   <ProjectItem
