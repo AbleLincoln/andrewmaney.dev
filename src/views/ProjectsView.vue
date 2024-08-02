@@ -20,7 +20,8 @@ import untapsite from '../assets/img/untapsite.png'
     :imgsrc="untapsite"
     href="https://untap.in/"
     source-code="https://github.com/cokeeffekt/untap.in"
-    repo="cokeeffekt/untap.in"
+    user="cokeeffekt"
+    repo="untap.in"
   />
 
   <ProjectItem

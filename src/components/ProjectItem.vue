@@ -13,6 +13,7 @@ defineProps({
   builtWith: { type: Array },
   sourceCode: { type: String },
   repo: { type: String },
+  user: { type: String, default: 'AbleLincoln' },
 })
 </script>
 
@@ -38,7 +39,7 @@ defineProps({
       </a> -->
 
       <Linguistical
-        user="AbleLincoln"
+        :user="user"
         :repo="repo"
         theme="dark"
         class="max-w-sm rounded-lg shadow-none"
