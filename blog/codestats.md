@@ -79,6 +79,9 @@ Try:
 
 - [google-github-actions/deploy-cloudrun](https://github.com/google-github-actions/deploy-cloudrun)
 
+Actually we ended up with [fly.io](https://fly.io/). Simple Docker image config. Only ran into a few snags with needing to change python libs due to node version.
+Also had to deal with pem file -> env secrets
+
 ## Resources
 
 - [GiHub: Authenticating as a GitHub App installation](https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/authenticating-as-a-github-app-installation)
@@ -94,3 +97,4 @@ Try:
 - [Packaging Vue Components for npm](https://v2.vuejs.org/v2/cookbook/packaging-sfc-for-npm.html) (specifically for SFC)
 - [How to create a component library with Vue 3 + ViteJS + TypeScript?](https://medium.com/@blaster203/how-to-create-a-component-library-with-vue-3-vitejs-typescript-8eb41f799045)
   - [`install` function](https://github.com/IsraelDCastro/my-library-vue-ts/blob/main/src/components/main.ts)
+- [Continuous Deployment with Fly.io and GitHub Actions](https://fly.io/docs/app-guides/continuous-deployment-with-github-actions/)

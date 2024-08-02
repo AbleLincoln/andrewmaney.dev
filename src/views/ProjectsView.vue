@@ -10,9 +10,19 @@ import ProjectItem from '../components/ProjectItem.vue'
 import watwsite from '../assets/img/watwsite.png'
 import fasisite from '../assets/img/fasisite.png'
 import push2sftp from '../assets/img/push2sftp.png'
+import untapsite from '../assets/img/untapsite.png'
 </script>
 
 <template>
+  <ProjectItem
+    title="Untap"
+    subtitle="card game simulator"
+    :imgsrc="untapsite"
+    href="https://untap.in/"
+    source-code="https://github.com/cokeeffekt/untap.in"
+    repo="cokeeffekt/untap.in"
+  />
+
   <ProjectItem
     title="Wyman & the Wolves"
     subtitle="band site"
