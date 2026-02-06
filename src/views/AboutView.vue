@@ -34,6 +34,7 @@ import SkillItem from '../components/SkillItem.vue'
     <SkillItem skill="JavaScript" />
     <SkillItem skill="Vue" />
     <SkillItem skill="React" />
+    <SkillItem skill="Angular" />
     <SkillItem skill="Node" />
     <SkillItem skill="PHP" />
     <SkillItem skill="WordPress" />

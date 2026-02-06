@@ -31,4 +31,8 @@ export default {
     icon: 'fa-wordpress',
     color: '#1b769c',
   },
+  Angular: {
+    icon: 'fa-angular',
+    color: '#a945ff',
+  },
 }

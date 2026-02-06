@@ -17,6 +17,7 @@ import {
   faPhp,
   faWordpress,
   faGithub,
+  faAngular,
 } from '@fortawesome/free-brands-svg-icons'
 
 library.add(
@@ -29,7 +30,8 @@ library.add(
   faPhp,
   faWordpress,
   faGithub,
-  faArrowUpRightFromSquare
+  faArrowUpRightFromSquare,
+  faAngular
 )
 
 const app = createApp(App)
